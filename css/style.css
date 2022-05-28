@@ -815,6 +815,7 @@ img {
 
 .function {
   padding: 65px;
+  background: #FFFFFF1A;
 }
 
 .function-title {
@@ -825,4 +826,45 @@ img {
 .function-title::before {
   background: url('../img/Function.png') no-repeat center left;
   z-index: -1;
+}
+
+.function-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  max-width: 100%;
+  margin: 0 auto 16px auto;
+  box-shadow: 0px 0px 12px 0px #0000001F;
+  border-radius: 16px;
+}
+
+.function-image-wrapper {
+  max-width: 56px;
+  max-height: 56px;
+  margin-bottom: 8px;
+}
+
+.function-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  background: #fff;
+}
+
+.store-img-wrapper {
+  max-width: 100%;
+}
+
+@media (max-width: 1390px) {
+  .nav-container {
+    min-width: 975px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .nav-container {
+    min-width: 940px;
+  }
 }
