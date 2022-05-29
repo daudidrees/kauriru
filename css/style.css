@@ -876,6 +876,10 @@ img {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
 @media (max-width: 1390px) {
   .nav-container {
     min-width: 975px;
@@ -1454,6 +1458,10 @@ img {
   .checkbox-1 {
     margin-right: 97px;
   }
+
+  .hide {
+    display: block;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1517,6 +1525,7 @@ img {
     padding: 12px 5px;
     width: 45%;
     font-size: 14px;
+    line-height: 26px;
   }
 
   .services-title {
