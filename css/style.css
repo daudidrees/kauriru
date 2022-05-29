@@ -162,7 +162,7 @@ img {
 /* Form */
 
 .top-form {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
@@ -613,7 +613,7 @@ img {
 }
 
 .merit-title::before {
-  /* background: url('../img/Merit.png') no-repeat center left; */
+  background: url('../img/Merit-resized.png') no-repeat center left;
   z-index: -1;
 }
 
@@ -1387,7 +1387,7 @@ img {
   }
 
   .difference-title::before {
-    background: url(../img/Difference-mbl.png) no-repeat center left;
+    background: url('../img/Difference-mbl.png') no-repeat center left;
     left: 0;
   }
 
@@ -1464,6 +1464,14 @@ img {
   }
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .header::before {
+    background: url('../img/banner-tab-1-img.png') no-repeat center right -220px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 680px) {
 
   .difference-row {
@@ -1493,6 +1501,10 @@ img {
   .content-2-text {
     letter-spacing: 0;
   }
+
+  .header::before {
+    background: url('../img/banner-tab-1-img.png') no-repeat center right -280px;
+  }
 }
 
 @media (max-width: 585px) {
@@ -1500,6 +1512,11 @@ img {
     padding: 12px 5px;
     width: 45%;
     font-size: 16px;
+  }
+
+
+  .header::before {
+    background: url('../img/banner-tab-1-img.png') no-repeat center right -350px;
   }
 }
 
