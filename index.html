@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="nav">
+  <nav class="nav desktop-nav">
     <div class="container-xxxl nav-container">
       <ul class="nav-logo-wrapper">
         <a href="#">
@@ -33,28 +33,53 @@
     </div>
   </nav>
 
+  <nav class="nav mbl-nav">
+    <div class="container-xxxl nav-container">
+      <ul class="nav-logo-wrapper">
+        <a href="#">
+          <img class="nav-logo" src="./img/logo.svg" alt="Logo">
+        </a>
+      </ul>
+      <ul class="btn-wrapper mbl-btn hamburger">
+        <button class="hamburger-btn"><img src="./img/hamburger.png" alt="hamburger"></button>
+      </ul>
+      <ul class="link-wrapper mbl-links">
+        <li class="nav-links first-link"><a href="#">カウリルの特徴</a></li>
+        <li class="nav-links"><a href="#">導入メリット</a></li>
+        <li class="nav-links"><a href="#">機能一覧</a></li>
+        <li class="nav-links"><a href="#">料金プラン</a></li>
+        <button class="btn nav-btn nav-btn-1">ログイン</button>
+        <button class="btn nav-btn nav-btn-2">無料ストア開設</button>
+      </ul>
+    </div>
+  </nav>
+
   <section class="header">
     <div class="container container-xxxl header-container">
       <div class="row">
-        <div class="col-5 header-col header-col-1">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 col-xxxl-5 header-col header-col-1">
           <div class="header-img-wrapper">
             <img class="header-img" src="./img/banner_left.png" alt="headerImg">
           </div>
-          <div class="col-12 btn-col">
+          <div class="col-12 btn-col mbl-none">
             <button class="btn header-btn">無料ストア開設</button>
           </div>
         </div>
-        <div class="col-6 header-col">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-xxxl-6 header-col">
           <div class="desktop-image-wrapper">
             <img class="desktop-image" src="./img/banner_right.png" alt="">
           </div>
+        </div>
+        <div class="col-12 btn-col desktop-none">
+          <button class="btn header-btn hdr-btn-1">無料ストア開設</button>
+          <button class="btn header-btn hdr-btn-2">お問い合わせ</button>
         </div>
       </div>
     </div>
   </section>
 
   <form action="#" class="top-form">
-    <div class="row">
+    <div class="row form-row">
       <div class="col-12">
         <h1 class="form-title">お問い合わせ</h1>
         <p class="form-desc">お問い合せ項目 <span class="red-message form-des-span">必須</span></p>
@@ -106,7 +131,7 @@
     <div class="container container-xxxl">
       <div class="row">
         <div class="col-12">
-          <div class="container-md">
+          <div class="container-md services-container">
             <div class="services-title-wrapper">
               <h1 class="services-title">美容機器・家電・アウトドア・スポーツ用品・補聴器・感染症対策器・鞄・楽器など</h1>
             </div>
@@ -147,14 +172,14 @@
   </section>
 
   <section class="difference">
-    <div class=" container-lg">
-      <div class="row">
+    <div class="container-lg">
+      <div class="row difference-row">
         <div class="col-12">
           <h1 class="difference-title">カウリルの「レンタル」と「サブスク」の違いとは?</h1>
           <p class="difference-desc">「サブスク」という言葉をよく耳にするけれど、そもそもサブスクって何?と思っている方も多いはずです。
             カウリルでご利用いただけるサービスをご紹介します。</p>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-xxxl-6 difference-col-1">
           <div class="diff-sub-card">
             <h1 class="diff-sub-title">短期レンタル</h1>
             <p class="diff-sub-desc">1泊～利用できる短期レンタル</p>
@@ -165,7 +190,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-xxxl-6">
           <div class="diff-sub-card">
             <h1 class="diff-sub-title">サブスク(定額制)レンタル</h1>
             <p class="diff-sub-desc">定額制で対象の商品をレンタル</p>
@@ -464,6 +489,65 @@
       </div>
     </div>
   </section>
+
+  <!-- Hidden On Desktop-->
+  <div class="contact">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="contact-title">お問い合わせ</h1>
+        <p class="contact-title-desc">以下の項目にご入力をいただき、内容をご確認の上お問合せください。
+          必須項目には必ずご入力ください。後日、担当者よりご連絡をさせていただきます。</p>
+      </div>
+    </div>
+    <form action="#" class="bottom-form">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="form-title">お問い合わせ</h1>
+          <p class="form-desc">お問い合せ項目 <span class="red-message form-des-span">必須</span></p>
+
+          <div class="checkbox">
+            <div class="checkbox-wrapper checkbox-1">
+              <input type="radio" name="my-input" id="yes">
+              <label class="checkbox-title" for="お問合せ">お問合せ</label>
+            </div>
+            <div class="checkbox-wrapper checkbox-2">
+              <input type="radio" name="my-input" id="yes">
+              <label class="checkbox-title" for="資料請求">資料請求</label>
+            </div>
+          </div>
+          <div class="checkbox">
+            <div class="checkbox-wrapper checkbox-3">
+              <input type="radio" name="my-input" id="yes">
+              <label class="checkbox-title" for="オンライン打合せ">オンライン打合せ</label>
+            </div>
+            <div class="checkbox-wrapper checkbox-4">
+              <input type="radio" name="my-input" id="yes">
+              <label class="checkbox-title" for="その他">その他</label>
+            </div>
+          </div>
+
+          <p class="form-desc form-desc-2">会社名<span class="red-message form-des-span">必須</span></p>
+          <input class="form-input" type="text" id="name" placeholder="株式会社TENT">
+
+          <p class="form-desc form-desc-2">ご担当者名<span class="red-message form-des-span">必須</span></p>
+          <input class="form-input" type="text" id="name" placeholder="山田太郎">
+
+          <p class="form-desc form-desc-2">電話番号<span class="red-message form-des-span">必須</span></p>
+          <input class="form-input" type="text" id="name" placeholder="000-1234-5678">
+
+          <p class="form-desc form-desc-2">メールアドレス<span class="red-message form-des-span">必須</span></p>
+          <input class="form-input" type="text" id="name" placeholder="info@tent-inc.jp">
+
+          <p class="form-desc form-desc-2">お問い合わせ内容<span class="red-message form-des-span">必須</span></p>
+          <textarea class="form-input" name="message" id="message" cols="10" rows="3"
+            placeholder="お問い合わせ内容を入力してください"></textarea>
+          <div class="form-btn-wrapper">
+            <button class="btn form-btn">入力内容を確認する</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 
 </body>
 
